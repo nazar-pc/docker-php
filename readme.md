@@ -27,7 +27,7 @@ PECL:
 * memcached
 
 #How to use
-Usage is similar to [official images](https://registry.hub.docker.com/_/php/), but use `nazarpc/php-apache`, `nazarpc/php-cli` and `nazarpc/php-fpm` instead of original names.
+Usage is similar to [official images](https://registry.hub.docker.com/_/php/), but use `nazarpc/php:apache`, `nazarpc/php:cli` and `nazarpc/php:fpm` instead of original names.
 
 #Questions?
 Open an issue and ask your question there:)
