@@ -44,8 +44,6 @@ RUN apt-get update && \
 		ftp \
 		gd \
 		gettext \
-		hash \
-		iconv \
 		mbstring \
 		mcrypt \
 		mysqli \
