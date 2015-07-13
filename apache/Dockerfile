@@ -33,7 +33,6 @@ RUN apt-get update && \
 
 # Cleanup
 
-	apt-get autoremove -y && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/* && \
 
@@ -44,6 +43,7 @@ RUN apt-get update && \
 		--with-jpeg-dir=/usr/lib/x86_64-linux-gnu/ \
 		--with-xpm-dir=/usr/lib/x86_64-linux-gnu/ \
 		--with-vpx-dir=/usr/lib/x86_64-linux-gnu/ \
+	&& \
 
 # Install some extra PHP Extension
 
