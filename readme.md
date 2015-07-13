@@ -8,8 +8,6 @@ PHP:
 * ftp
 * gd
 * gettext
-* hash
-* iconv
 * mbstring
 * mcrypt
 * mysqli
