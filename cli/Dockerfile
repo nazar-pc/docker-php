@@ -15,6 +15,8 @@ RUN apt-get update && \
 		libfreetype6-dev \
 		libjpeg62-turbo-dev \
 		libpng12-dev \
+		libxpm-dev \
+		libvpx-dev \
 
 # For ftp
 
@@ -34,6 +36,14 @@ RUN apt-get update && \
 	apt-get autoremove -y && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/* && \
+
+# Configure GD package for JPEG support
+
+	docker-php-ext-configure gd \
+		--with-freetype-dir=/usr/lib/x86_64-linux-gnu/ \
+		--with-jpeg-dir=/usr/lib/x86_64-linux-gnu/ \
+		--with-xpm-dir=/usr/lib/x86_64-linux-gnu/ \
+		--with-vpx-dir=/usr/lib/x86_64-linux-gnu/ \
 
 # Install some extra PHP Extension
 
