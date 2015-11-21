@@ -69,6 +69,6 @@ RUN apt-get update && \
 
 # Some extensions need to be installed via PECL
 
-	pecl install apcu-beta memcached && \
+	pecl install apcu memcached && \
 	echo 'extension = apcu.so' > /usr/local/etc/php/conf.d/apcu.ini && \
 	echo 'extension = memcached.so' > /usr/local/etc/php/conf.d/memcached.ini
