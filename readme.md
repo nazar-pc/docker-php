@@ -21,7 +21,7 @@ PHP:
 * zip
 
 PECL:
-* apcu-beta
+* apcu-4.0.8
 * memcached
 
 #How to use
