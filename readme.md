@@ -1,5 +1,5 @@
 # More feature-complete PHP Docker images based on official images
-Images provided are based on PHP 5.6 (apache, cli and fpm variants) and contains additional extensions that you'll likely need in most, even advanced applications (similar set of extensions provided by packaged PHP in major Linux distributives).
+Images provided are based on PHP 7.0 (apache, cli and fpm variants) and contains additional extensions that you'll likely need in most, even advanced applications (similar set of extensions provided by packaged PHP in major Linux distributives).
 
 PHP:
 * bcmath
@@ -21,7 +21,7 @@ PHP:
 * zip
 
 PECL:
-* apcu-4.0.8
+* APCu
 * memcached
 
 #How to use

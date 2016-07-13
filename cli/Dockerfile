@@ -1,4 +1,4 @@
-FROM php:5.6-cli
+FROM php:7.0-cli
 MAINTAINER Nazar Mokrynskyi <nazar@mokrynskyi.com>
 
 # We'll need some additional packages
@@ -69,6 +69,6 @@ RUN apt-get update && \
 
 # Some extensions need to be installed via PECL
 
-	pecl install apcu-4.0.8 memcached && \
+	pecl install apcu-5.1.3 memcached && \
 	echo 'extension = apcu.so' > /usr/local/etc/php/conf.d/apcu.ini && \
 	echo 'extension = memcached.so' > /usr/local/etc/php/conf.d/memcached.ini
