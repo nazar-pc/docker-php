@@ -1,20 +1,18 @@
 # More feature-complete PHP Docker images based on official images
-Images provided are based on PHP 7.0 (apache, cli and fpm variants) and contains additional extensions that you'll likely need in most, even advanced applications (similar set of extensions provided by packaged PHP in major Linux distributives).
+Images provided are based on PHP 7.2 (apache, cli and fpm variants) and contains additional extensions that you'll likely need in most, even advanced applications (similar set of extensions provided by packaged PHP in major Linux distributives).
 
 PHP:
 * bcmath
 * bz2
 * exif
-* ftp
 * gd
 * gettext
-* mbstring
-* mcrypt
 * mysqli
 * opcache
 * pdo_mysql
 * shmop
 * sockets
+* sodium
 * sysvmsg
 * sysvsem
 * sysvshm
